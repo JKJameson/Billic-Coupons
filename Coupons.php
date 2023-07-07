@@ -94,7 +94,7 @@ class Coupons {
 			echo '<tr><td>&nbsp;</td><td><label>Limit to users registered from&nbsp;</label><input type="text" class="form-control" name="registered_date_start" id="registered_date_start" value="'.date('Y-m-d', $data['registered_date_start']).'" class="form-control" style="width: 100px"><label>&nbsp;to&nbsp;</label><input type="text" class="form-control" name="registered_date_end" id="registered_date_end" value="'.date('Y-m-d', $data['registered_date_end']).'" class="form-control" style="width: 100px"></div></td></tr>';
 			echo '</td></tr><tr><td colspan="4" align="center"><input type="submit" class="btn btn-success" name="update" value="Update &raquo;"></td></tr></table></form>';
 			
-			echo '<link type="text/css" rel="stylesheet" href="/Modules/Core/bootstrap-multiselect.css">';
+			echo '<link type="text/css" rel="stylesheet" href="/Modules/Core/bootstrap/bootstrap-multiselect.min.css">';
 			echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker.min.css">';
 			echo '<script>addLoadEvent(function() {
 			$(\'#coupon_billingcycles\').multiselect({
@@ -111,7 +111,7 @@ class Coupons {
         });
 		$.getScript( "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js", function( data, textStatus, jqxhr ) { $( "#registered_date_start" ).datepicker({ format: "yyyy-mm-dd" }); $( "#registered_date_end" ).datepicker({ format: "yyyy-mm-dd" }); });
 			});</script>';
-			$billic->add_script('/Modules/Core/bootstrap-multiselect.js');
+			$billic->add_script('/Modules/Core/bootstrap/bootstrap-multiselect.min.js');
 			return;
 		}
 		
